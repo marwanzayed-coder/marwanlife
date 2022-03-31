@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <!-- Start Book Element -->
+    <div class="main-book">
+      <div class="card">
+        <!-- Start Head -->
+        <div class="head">
+          <h2>Books</h2>
+          <p>
+            All Books in my Library, Including Title. Publisher and Author Name
+          </p>
+        </div>
+        <!-- End Head -->
+        <!-- Start Control -->
+        <div class="control" id="control">
+          <div class="count"><span id="num">19</span> <span>Book</span></div>
+          <div class="icon">
+            <div class="list-view" title="List View" id="listView">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="grid-view active" title="Grid View" id="gridView">
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <!-- End Control -->
+        <!-- Start Books -->
+        <div class="books" id="books">
+          <div class="flex" id="flex"></div>
+        </div>
+        <!-- End Books -->
+      </div>
+    </div>
+    <!-- End Book Element -->
+    <%- include('./partials/footer') %>
+  </body>
+</html>

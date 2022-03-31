@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+
+    <!-- Start program Element -->
+    <div class="main-program">
+      <div class="card">
+        <!-- Start Head -->
+        <div class="head">
+          <h2>Programs</h2>
+          <p>
+            Here all the programs I used will be displayed with the links of the
+            programs
+          </p>
+        </div>
+        <!-- End Head -->
+        <!-- Start Control -->
+        <div class="control">
+          <div class="count">
+            <span id="count">15</span> <span>Program</span>
+          </div>
+        </div>
+        <!-- End Control -->
+        <!-- ٍStart program -->
+        <div class="program course">
+          <div class="list" id="program"></div>
+        </div>
+        <!-- End program -->
+      </div>
+    </div>
+    <!-- End program Element -->
+    <%- include('./partials/footer') %>
+    <script src="/js/program.js"></script>
+  </body>
+</html>

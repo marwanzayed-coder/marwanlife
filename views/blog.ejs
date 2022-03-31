@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('./partials/head') %>
+  <body>
+    <%- include('./partials/header') %>
+    <div class="blog course">
+      <div class="card">
+        <!-- Start Head -->
+        <div class="head">
+          <h2>Blogs</h2>
+          <p>
+            Here are all my articles that I write in all the fields I know and
+            anything I will know I will write here
+          </p>
+        </div>
+        <!-- End Head -->
+        <!-- Start Control -->
+        <div class="control">
+          <div class="count"><span>1</span> <span>Article</span></div>
+        </div>
+        <!-- End Control -->
+        <div class="list">
+          <% arrBlog.forEach((blog) => { %>
+          <a class="box" dir="rtl" href="/blogs/<%= blog._id %>">
+            <h5 class="top"><%= blog.title %></h5>
+            <p class="bottom"><%= blog.summary %></p>
+          </a>
+          <% }) %>
+        </div>
+      </div>
+    </div>
+    <%- include('./partials/footer') %>
+    <script>
+      console.log("Hello");
+    </script>
+  </body>
+</html>
