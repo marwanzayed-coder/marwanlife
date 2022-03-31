@@ -169,7 +169,7 @@ if (location.href.startsWith("http://localhost:3000/book/")) {
   let name = document.getElementById("name");
   let publisher = document.getElementById("publisher");
   let writer = document.getElementById("writer");
-  number = 37;
+  number = 38;
   books.forEach((book) => {
     if (location.href.slice(number) == book.link) {
       name.innerHTML = books[book.id].name;
